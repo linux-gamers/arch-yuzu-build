@@ -3,5 +3,5 @@ FROM archlinux
 RUN useradd -ms /bin/bash linuxgamers
 
 RUN pacman -Syyu --noconfirm && \
-    pacman -S --needed git base-devel ninja cmake sdl2 qt5 python2 python-pip boost catch2 fmt libzip lz4 mbedtls nlohmann-json openssl opus zlib zstd doxygen --noconfirm && \
+    pacman -S --needed git base-devel base-devel boost catch2 cmake doxygen ffmpeg fmt git glslang libzip lz4 mbedtls ninja nlohmann-json openssl opus python-pip python2 qt5 sdl2 zlib zstd --noconfirm && \
     pip install conan
